@@ -39,3 +39,31 @@ via a web interface
 through a programming language
 
 7. What are MySQL Database Queries?
+
+A query is a specific request or a question. One can query a database for specific information and have a record returned.
+
+8. What are some of the common MySQL commands?
+
+![Screenshot (987)](https://user-images.githubusercontent.com/81725794/184502320-6e6460f3-57cb-43a1-95ff-15158f5e71fe.png)
+
+![Screenshot (988)](https://user-images.githubusercontent.com/81725794/184502324-a7396f0e-41b9-41e1-8d1e-a45b79444486.png)
+
+9. How do you create a database in MySQL?
+
+Use the following command to create a new database called ‘books’:
+
+CREATE DATABASE books;
+
+10. How do you create a table using MySQL?
+
+Use the following to create a table using MySQL:
+
+CREATE TABLE history (
+author VARCHAR(128),
+title VARCHAR(128),
+type VARCHAR(16),
+year CHAR(4)) ENGINE InnoDB;
+
+11. How do you Insert Data Into MySQL?
+
+
