@@ -18,3 +18,24 @@ Configuration and Security
 
 A database is a structured collection of data stored in a computer system and organized in a way to be quickly searched. With databases, information can be rapidly retrieved.
 
+4. What does SQL in MySQL stand for?
+
+The SQL in MySQL stands for Structured Query Language. This language is also used in other databases such as Oracle and Microsoft SQL Server.  One can use commands such as the following to send requests from a database:
+
+SELECT title FROM publications WHERE author = ' J. K. Rowling’;
+
+Note that SQL is not case sensitive. However, it is a good practice to write the SQL keywords in CAPS and other names and variables in a small case.
+
+5. What does a MySQL database contain?
+
+A MySQL database contains one or more tables, each of which contains records or rows. Within these rows are various columns or fields that contain the data itself.
+
+6. How can you interact with MySQL?
+
+There are three main ways you can interact with MySQL: 
+
+using a command line
+via a web interface
+through a programming language
+
+7. What are MySQL Database Queries?
