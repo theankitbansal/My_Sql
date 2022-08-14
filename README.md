@@ -66,4 +66,38 @@ year CHAR(4)) ENGINE InnoDB;
 
 11. How do you Insert Data Into MySQL?
 
+The INSERT INTO statement is used to add new records to a MySQL table:
 
+INSERT INTO table_name (column1, column2, column3,...)
+VALUES (value1, value2, value3,...)
+If we want to add values for all the columns of the table, we do not need to specify the column names in the SQL query. However, the order of the values should be in the same order as the columns in the table. The INSERT INTO syntax would be as follows:
+
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+
+12. How do you remove a column from a database?
+
+You can remove a column by using the DROP keyword:
+
+ALTER TABLE classics DROP pages;
+
+13. How to create an Index in MySQL?
+
+In MySQL, there are different index types, such as a regular INDEX, a PRIMARY KEY, or a FULLTEXT index. You can achieve fast searches with the help of an index. Indexes speed up performance by either ordering the data on disk so it's quicker to find your result or, telling the SQL engine where to go to find your data.
+
+Example: Adding indexes to the history table:
+
+ALTER TABLE history ADD INDEX(author(10));
+ALTER TABLE history ADD INDEX(title(10));
+ALTER TABLE history ADD INDEX(category(5));
+ALTER TABLE history ADD INDEX(year);
+DESCRIBE history;
+
+14. How to Delete Data From a MySQL Table?
+
+In MySQL, the DELETE statement is used to delete records from a table:
+
+DELETE FROM table_name
+WHERE column_name = value_name
+
+15. How do you view a database in MySQL?
