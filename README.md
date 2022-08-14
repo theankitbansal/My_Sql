@@ -101,3 +101,55 @@ DELETE FROM table_name
 WHERE column_name = value_name
 
 15. How do you view a database in MySQL?
+
+One can view all the databases on the MySQL server host using the following command:
+
+mysql> SHOW DATABASES;  
+
+16. What are the Numeric Data Types in MySQL?
+
+MySQL has numeric data types for integer, fixed-point, floating-point, and bit values, as shown in the table below. Numeric types can be signed or unsigned, except BIT. A special attribute enables the automatic generation of sequential integer or floating-point column values, which is useful for applications that require a series of unique identification numbers.
+
+![Screenshot (989)](https://user-images.githubusercontent.com/81725794/184522728-2da1e72e-e941-41d4-9253-83ee5f7fa36d.png)
+
+17. What are the String Data Types in MySQL?
+
+![Screenshot (990)](https://user-images.githubusercontent.com/81725794/184522741-02a5e689-fde4-43b3-956e-af59fa9b6d60.png)
+
+18. What are the Temporal Data Types in MySQL?
+
+![Screenshot (991)](https://user-images.githubusercontent.com/81725794/184522751-4722d95b-0f64-48ae-a1ad-5f17079924b1.png)
+
+Example: To select the records with an Order Date of "2018-11-11" from a table:
+
+SELECT * FROM Orders WHERE OrderDate='2018-11-11'
+19. What is BLOB in MySQL?
+BLOB is an acronym that stands for a binary large object. It is used to hold a variable amount of data.
+There are four types of BLOB:
+
+TINYBLOB
+BLOB
+MEDIUMBLOB
+LONGBLOB
+A BLOB can hold a very large amount of data. For example - documents, images, and even videos. You could store your complete novel as a file in a BLOB if needed.
+
+20. How to add users in MySQL?
+
+You can add a User by using the CREATE command and specifying the necessary credentials. For example:
+
+CREATE USER ‘testuser’ IDENTIFIED BY ‘sample password’;
+ 
+
+Intermediate MySQL Interview Questions
+
+21. What are MySQL “Views”?
+
+In MySQL, a view consists of a set of rows that is returned if a particular query is executed. This is also known as a ‘virtual table’. Views make it easy to retrieve the way of making the query available via an alias. 
+The advantages of views are:
+
+Simplicity
+Security
+Maintainability
+
+22. How do you create and execute views in MySQL?
+
