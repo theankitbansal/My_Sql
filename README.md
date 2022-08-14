@@ -153,3 +153,57 @@ Maintainability
 
 22. How do you create and execute views in MySQL?
 
+Creating a view is accomplished with the CREATE VIEW statement. As an example:
+
+CREATE
+   [OR REPLACE]
+   [ALGORITHM = {MERGE | TEMPTABLE | UNDEFINED }]
+   [DEFINER = { user | CURRENT_USER }]
+   [SQL SECURITY { DEFINER | INVOKER }]
+   VIEW view_name [(column_list)]
+   AS select_statement
+   [WITH [CASCADED | LOCAL] CHECK OPTION]
+   
+23. What are MySQL Triggers?
+
+A trigger is a task that executes in response to some predefined database event, such as after a new row is added to a particular table. Specifically, this event involves inserting, modifying, or deleting table data, and the task can occur either prior to or immediately following any such event. 
+Triggers have many purposes, including:
+
+Audit Trails
+Validation
+Referential integrity enforcement
+
+24. How many Triggers are possible in MySQL?
+
+There are six Triggers allowed to use in the MySQL database:
+
+Before Insert
+After Insert
+Before Update
+After Update
+Before Delete
+After Delete
+
+25. What is the MySQL server?
+
+The server, mysqld, is the hub of a MySQL installation; it performs all manipulation of databases and tables.
+
+26. What are the MySQL clients and utilities?
+
+Several MySQL programs are available to help you communicate with the server. For administrative tasks, some of the most important ones are listed here:
+
+• mysql—An interactive program that enables you to send SQL statements to the server and to view the results. You can also use mysql to execute batch scripts (text files containing SQL statements).
+
+• mysqladmin—An administrative program for performing tasks such as shutting down the server, checking its configuration, or monitoring its status if it appears not to be functioning properly.
+
+• mysqldump—A tool for backing up your databases or copying databases to another server.
+
+• mysqlcheck and myisamchk—Programs that help you perform table checking, analysis, and optimization, as well as repairs if tables become damaged. mysqlcheck works with MyISAM tables and to some extent with tables for other storage engines. myisamchk is for use only with MyISAM tables.
+
+27. What are the types of relationships used in MySQL?
+
+There are three categories of relationships in MySQL:
+
+One-to-One: Usually, when two items have a one-to-one relationship, you just include them as columns in the same table.
+One-to-Many: One-to-many (or many-to-one) relationships occur when one row in one table is linked to many rows in another table.
+Many-to-Many: In a many-to-many relationship, many rows in one table are linked to many rows in another table. To create this relationship, add a third table containing the same key column from each of the other tables
