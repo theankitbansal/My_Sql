@@ -206,4 +206,31 @@ There are three categories of relationships in MySQL:
 
 One-to-One: Usually, when two items have a one-to-one relationship, you just include them as columns in the same table.
 One-to-Many: One-to-many (or many-to-one) relationships occur when one row in one table is linked to many rows in another table.
-Many-to-Many: In a many-to-many relationship, many rows in one table are linked to many rows in another table. To create this relationship, add a third table containing the same key column from each of the other tables
+Many-to-Many: In a many-to-many relationship, many rows in one table are linked to many rows in another table. To create this relationship, add a third table containing the same key column from each of the other tables.
+
+Advanced MySQL Interview Questions
+
+28. Can you explain the logical architecture of MySQL?
+
+The top layer contains the services most network-based client/server tools or servers need such as connection handling, authentication, security, and so forth.
+The second layer contains much of MySQL’s brains. This has the code for query parsing, analysis, optimization, caching, and all the built-in functions.
+
+The third layer contains the storage engines that are responsible for storing and retrieving the data stored in MySQL.
+
+![image](https://user-images.githubusercontent.com/81725794/184581446-dbcda38e-f65b-44e7-a810-7c0aee95c39f.png)
+
+29. What is Scaling in MySQL?
+
+In MySQL, scaling capacity is actually the ability to handle the load, and it’s useful to think of load from several different angles such as:
+
+Quantity of data
+Number of users
+User activity
+Size of related datasets
+
+30. What is Sharding in SQL?
+
+The process of breaking up large tables into smaller chunks (called shards) that are spread across multiple servers is called Sharding. 
+The advantage of Sharding is that since the sharded database is generally much smaller than the original; queries, maintenance, and all other tasks are much faster.
+
+31. What are Transaction Storage Engines in MySQL?
