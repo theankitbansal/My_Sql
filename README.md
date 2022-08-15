@@ -234,3 +234,27 @@ The process of breaking up large tables into smaller chunks (called shards) that
 The advantage of Sharding is that since the sharded database is generally much smaller than the original; queries, maintenance, and all other tasks are much faster.
 
 31. What are Transaction Storage Engines in MySQL?
+
+To be able to use MySQL’s transaction facility, you have to be using MySQL’s InnoDB storage engine (which is the default from version 5.5 onward). If you are not sure which version of MySQL your code will be running on, rather than assuming InnoDB is the default engine you can force its use when creating a table, as follows.
+
+Conclusion
+
+32. Conclusion
+
+Several free or low-cost database management systems are available from which to choose, such as MySQL, PostgreSQL, or SQLite.
+
+When you compare MySQL with other database systems, think about what’s most important to you. Performance, features (such as SQL conformance or extensions), support, licensing conditions, and price all are factors to take into account.
+
+MySQL is one of the best RDBMS being used for developing various web-based software applications.
+
+MySQL is offered under two different editions: the open-source MySQL Community Server and the proprietary Enterprise Server.
+Given these considerations, MySQL has many attractive qualities:
+
+Speed
+Ease of use
+Query language support
+Capability
+Connectivity and security
+Portability
+Availability and cost
+Open distribution and source code
