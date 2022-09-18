@@ -93,6 +93,7 @@ ALTER TABLE history ADD INDEX(category(5));
 ALTER TABLE history ADD INDEX(year);
 DESCRIBE history;
 
+
 14. How to Delete Data From a MySQL Table?
 
 In MySQL, the DELETE statement is used to delete records from a table:
