@@ -103,6 +103,7 @@ WHERE column_name = value_name
 
 15. How do you view a database in MySQL?
 
+
 One can view all the databases on the MySQL server host using the following command:
 
 mysql> SHOW DATABASES;  
