@@ -15,6 +15,7 @@ Replication: One MySQL server can be duplicated on another, providing numerous a
 Configuration and Security
 
 
+
 3. What do you mean by ‘databases’?
 
 A database is a structured collection of data stored in a computer system and organized in a way to be quickly searched. With databases, information can be rapidly retrieved.
