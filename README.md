@@ -26,6 +26,7 @@ The SQL in MySQL stands for Structured Query Language. This language is also use
 
 SELECT title FROM publications WHERE author = ' J. K. Rowling’;
 
+
 Note that SQL is not case sensitive. However, it is a good practice to write the SQL keywords in CAPS and other names and variables in a small case.
 
 5. What does a MySQL database contain?
